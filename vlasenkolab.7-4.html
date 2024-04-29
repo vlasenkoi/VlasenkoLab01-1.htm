@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Замовлення товару</title>
+</head>
+<body>
+    <h2>Форма замовлення товару</h2>
+    <form action="process_order.php" method="post">
+        <label for="bank_account">Номер банківського рахунку:</label>
+        <input type="text" id="bank_account" name="bank_account" required><br><br>
+        
+        <label for="personal_id">Особистий номер користувача:</label>
+        <input type="text" id="personal_id" name="personal_id" required><br><br>
+        
+        <label for="products">Список товарів:</label><br>
+        <input type="checkbox" id="product1" name="products[]" value="Товар 1">
+        <label for="product1">Товар 1</label><br>
+        <input type="checkbox" id="product2" name="products[]" value="Товар 2">
+        <label for="product2">Товар 2</label><br>
+        <input type="checkbox" id="product3" name="products[]" value="Товар 3">
+        <label for="product3">Товар 3</label><br><br>
+        
+        <label for="comments">Додаткові коментарі:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+        
+        <label for="payment">Вид оплати:</label><br>
+        <input type="radio" id="cash" name="payment" value="Готівковий">
+        <label for="cash">Готівковий</label><br>
+        <input type="radio" id="cashless" name="payment" value="Безготівковий">
+        <label for="cashless">Безготівковий</label><br><br>
+        
+        <label for="additional_info">Додаткова інформація:</label><br>
+        <input type="checkbox" id="balance" name="additional_info[]" value="Залишки на рахунку">
+        <label for="balance">Залишки на рахунку</label><br>
+        <input type="checkbox" id="recent_payments" name="additional_info[]" value="Список останніх виплат">
+        <label for="recent_payments">Список останніх виплат</label><br><br>
+        
+        <input type="submit" value="Відправити замовлення">
+        <input type="reset" value="Очистити форму">
+    </form>
+</body>
+</html>

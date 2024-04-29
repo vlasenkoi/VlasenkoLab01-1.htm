@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета</title>
+</head>
+<body>
+    <h2>Анкета</h2>
+    <form action="submit_form.php" method="post">
+        <label for="surname">Прізвище:</label><br>
+        <input type="text" id="surname" name="surname" required><br><br>
+
+        <label for="name">Ім'я:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="patronymic">По батькові:</label><br>
+        <input type="text" id="patronymic" name="patronymic"><br><br>
+
+        <label for="birthdate">Дата народження:</label><br>
+        <input type="date" id="birthdate" name="birthdate" required><br><br>
+
+        <label for="address">Домашня адреса:</label><br>
+        <input type="text" id="address" name="address" required><br><br>
+
+        <label for="work_or_study">Місце навчання або роботи:</label><br>
+        <input type="text" id="work_or_study" name="work_or_study" required><br><br>
+
+        <label for="phone">Домашній телефон:</label><br>
+        <input type="tel" id="phone" name="phone"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="interests">Область наукових інтересів:</label><br>
+        <select id="interests" name="interests" size="6" multiple>
+            <option value="1">Інформатика</option>
+            <option value="2">Математика</option>
+            <option value="3">Фізика</option>
+            <option value="4">Біологія</option>
+            <option value="5">Хімія</option>
+            <option value="6">Географія</option>
+            <option value="7">Історія</option>
+            
+        </select><br><br>
+
+        <input type="submit" value="Надіслати">
+        <input type="reset" value="Очистити">
+    </form>
+</body>
+</html>

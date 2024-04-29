@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Форма з усіма елементами</title>
+</head>
+<body>
+
+<form action="#" method="post">
+
+  <pre>
+  Ваше ім'я: <input name="name" type="text" maxlength="40" size="40" value="">
+  
+  Ваша стать:
+  <input type="radio" name="gender" value="male">Чоловіча
+  <input type="radio" name="gender" value="female">Жіноча
+  
+  На якому курсі Ви навчаєтесь?  
+  <select name="course" size="1">
+    <option value="1" selected> Перший </option>
+    <option value="2">Другий</option>
+    <option value="3">Третій</option>
+    <option value="4">Четвертий</option>
+    <option value="5">П'ятий </option>
+  </select>
+  
+  Які дисципліни ви вивчаєте на курсі?
+  <input type="checkbox" name="subjects" value="WEB" checked> WEB-програмування
+  <input type="checkbox" name="subjects" value="Eldinam"> Технічна електродинаміка
+  
+  Напишіть декілька слів про себе: 
+  </pre>
+  <textarea name="about" rows="6" cols="60" wrap="off"></textarea>
+  
+  <input type="submit" value=" Відіслати дані ">
+  <input type="reset" value=" Очистити форму ">
+  <input type="file" name="file" size="50" accept="image/*">
+  
+</form>
+
+</body>
+</html>

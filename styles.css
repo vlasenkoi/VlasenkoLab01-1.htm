@@ -1,0 +1,52 @@
+/* Фонове зображення сторінки */
+body {
+    background-image: url('background.jpg');
+    background-size: cover;
+}
+
+/* Червоний рядок на початку абзаців */
+p::first-line {
+    color: red;
+}
+
+/* Вирівнювання тексту абзаців по ширині */
+p {
+    text-align: justify;
+}
+
+/* Відстані ліворуч та праворуч від тексту до границь вікна */
+p {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* Стиль тексту - курсив */
+p {
+    font-style: italic;
+}
+
+/* Розмір тексту - довільний */
+p {
+    font-size: 30px;
+}
+
+/* Стилі для заголовка першого рівня */
+h1 {
+    font-weight: bold;
+    text-align: center;
+    color: blue;
+}
+
+/* Стилі для посилань */
+a:link {
+    color: green;
+    text-decoration: none;
+}
+a:visited {
+    color: purple;
+    text-decoration: underline;
+}
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
